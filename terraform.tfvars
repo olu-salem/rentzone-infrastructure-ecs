@@ -18,3 +18,14 @@ database_snapshot_identifier = "dev-rds-db-snapshot"
 database_instance_class      = "db.t3.micro"
 database_instance_identifier = "dev-rds-db"
 multi_az_deployment          = "false"
+
+# acm variables
+domain_name       = "zeptoleap.com"
+alternative_names = "*.zeptoleap.com"
+
+# alb variables
+target_type = "ip"
+
+# s3 variables
+env_file_bucket_name = "rentzone-ecs-env-file-bucket"
+env_file_name = "rentzone.env"
